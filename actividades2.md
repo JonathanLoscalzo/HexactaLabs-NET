@@ -54,7 +54,7 @@ public ActionResult Create(MovieVM movie)
 
 
 
-#### Ejercicio 3: Si la película se guardó exitosamente retornar a la grilla de películas y mostrar mensaje de éxito. 
+### Ejercicio 3: Si la película se guardó exitosamente retornar a la grilla de películas y mostrar mensaje de éxito. 
 
 ##### A-El mensaje debe contener el nombre de la película que se creó:
 
@@ -64,7 +64,7 @@ this.TempData["successmessage"] = "Se ha agregado exitosamente la pelicula: " + 
 
 -- 
 
-#### Ejercicio 4: Agregar la funcionalidad de permitir editar una película. El usuario debería ser capaz de poder editar la película mediante haciendo click en un link botón “Editar” en la grilla de películas: 
+### Ejercicio 4: Agregar la funcionalidad de permitir editar una película. El usuario debería ser capaz de poder editar la película mediante haciendo click en un link botón “Editar” en la grilla de películas: 
 
 
 ##### A-	Agregar una nueva acción en el controlador de películas (reutilizar la vista de creación):
@@ -109,7 +109,7 @@ public ActionResult Edit(MovieVM movie)
 --
 --
 
-#### Ejercicio 5: En la creación y edición de películas, incorporar la posibilidad de ingresar cuales son los géneros de la película. En la grilla de películas, por cada película mostrar cuáles son sus géneros.
+### Ejercicio 5: En la creación y edición de películas, incorporar la posibilidad de ingresar cuales son los géneros de la película. En la grilla de películas, por cada película mostrar cuáles son sus géneros.
 
 
 ##### A- Agregar un ListBox en la pantalla de creación de películas:
@@ -150,7 +150,7 @@ if (selectedGenres != null)
 --
 --
 
-#### Ejercicio 6: En la grilla de películas, agregar un link “Delete” para borrar la película:
+### Ejercicio 6: En la grilla de películas, agregar un link “Delete” para borrar la película:
 
 ```
 $.ajax({
