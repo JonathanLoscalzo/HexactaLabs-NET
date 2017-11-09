@@ -19,7 +19,7 @@ Deben utilizarse los helpers tipados de Razor
  - LabelFor  
  - TextBoxFor  
 
-#### C - El formulario debe ir por POST a una nueva acción Create del controlado:
+#### C - El formulario debe ir por POST a una nueva acción Create del controlador:
 
 ```
 [HttpPost]
@@ -53,7 +53,6 @@ public ActionResult Create(MovieVM movie)
 ##### D- El campo Name solo permite 100 caracteres. 
 
 
-
 ### Ejercicio 3: Si la película se guardó exitosamente retornar a la grilla de películas y mostrar mensaje de éxito. 
 
 ##### A-El mensaje debe contener el nombre de la película que se creó:
@@ -62,7 +61,8 @@ public ActionResult Create(MovieVM movie)
 this.TempData["successmessage"] = "Se ha agregado exitosamente la pelicula: " + movie.Name;
 ```
 
--- 
+##### Bonus - Agregar otro botón “Save and New” que permitirá al usuario crear la película y seguir cargando otra película a continuación. En este caso, mostrar otro mensaje de éxito en este caso en la pantalla de creación de película. 
+
 
 ### Ejercicio 4: Agregar la funcionalidad de permitir editar una película. El usuario debería ser capaz de poder editar la película mediante haciendo click en un link botón “Editar” en la grilla de películas: 
 
